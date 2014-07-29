@@ -1,0 +1,16 @@
+GIT commands I have needed.
+
+	Initializing a new repository:
+$ git init
+
+	Setting an remote:
+$ git remote add origin git://github.com/username/repository.git
+	or if origin is already set and we want to redirect it:
+$ git remote set-url origin git://github.com/username/repository.git
+	or if we want to redirect only the push URL:
+$git remote set-url --push origin git://github.com/username/repository.git
+
+Commit singe file from one branch to another:
+  $ git checkout branch1
+  $ git checkout branch2 file
+Commits file (must include file path) from branch1 to branch2.
